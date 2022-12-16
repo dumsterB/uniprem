@@ -15,7 +15,7 @@ async def echo_send(message: types.Message):
     link = message.text
     splitted = [*link]
     arr = []
-    # get the id
+    # get the id of the picture
     for i in range(len(splitted)):
         if (splitted[i] == '_'):
             arr.append([splitted[i + 1], splitted[i + 2], splitted[i + 3], splitted[i + 4], splitted[i + 5], splitted[i + 6],splitted[i + 7], splitted[i + 8]])
